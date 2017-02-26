@@ -1,0 +1,2 @@
+# javacore
+for automation courses
