@@ -1,4 +1,4 @@
-package com.vadim-bashynskiy.app;
+package com.bashynskiy;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
