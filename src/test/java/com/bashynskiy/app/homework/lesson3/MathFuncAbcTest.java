@@ -41,9 +41,9 @@ public class MathFuncAbcTest {
 
     @Test
     public void intDoubleToDouble() {
-        int a = (int) 10.746;
+        int a = (int) 11;
         double actualResult = Math.abs(a);
-        double expectedResult = 10.0;
+        double expectedResult = 11.0;
         Assert.assertEquals(expectedResult, actualResult, 0);
     }
 
