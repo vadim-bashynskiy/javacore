@@ -1,5 +1,4 @@
-package com.bashynskiy.runners;
-
+package com.bashynskiy.runners.lesson3;
 import com.bashynskiy.app.utils.convertors.PrimitiveConvertor;
 
 /**
