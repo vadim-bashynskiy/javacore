@@ -6,11 +6,10 @@ import java.util.Scanner;
  * Created by testu on 3/17/2017.
  */
 public class CircleArea {
-    static double circleArea;
     public static final double PI = 3.14;
 
     public static double calculateCircleArea(double radius) {
-        return circleArea = PI * radius * radius;
+        return PI * radius * radius;
     }
 
     public static double calculateBigger(double a, double b) {
@@ -19,6 +18,9 @@ public class CircleArea {
         } else {
             return b;
         }
+    }
+    public static double PifagorHypotenuza(double x,double y){
+         return Math.hypot(x,y);
     }
 
 }

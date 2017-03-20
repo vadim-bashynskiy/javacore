@@ -12,7 +12,8 @@ public class PrintMenu {
         System.out.println("5 - Run FloatToChar");
         System.out.println("6 - Run ChatToInt");
         System.out.println("7 - Run IntToChar");
-        System.out.println("8 - EXIT");
+        System.out.println("8 - Run Calculate Hypotenuse");
+        System.out.println("9 - EXIT");
         System.out.println("Please enter number wich program you want ot start:");
         Handler.runHendler();
     }

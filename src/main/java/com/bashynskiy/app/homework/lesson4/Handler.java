@@ -20,17 +20,17 @@ public class Handler {
         do {
             try {
                 selectedMenu = scanner.nextInt();
-                if (selectedMenu < 1 || selectedMenu > 8) {
-                    System.out.println("Please input a number between 1-8.");
+                if (selectedMenu < 1 || selectedMenu > 9) {
+                    System.out.println("Please input a number between 1-9.");
                 }
 
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input, please input a number between 1-8.");
+                System.out.println("Invalid input, please input a number between 1-9.");
                 scanner.nextLine();
                 selectedMenu = 0;
             }
 
-        } while (selectedMenu < 1 || selectedMenu > 8);
+        } while (selectedMenu < 1 || selectedMenu > 9);
 
         return selectedMenu;
     }
@@ -42,7 +42,11 @@ public class Handler {
 
             try {
                 double radius = Double.parseDouble(nextLine);
-                return radius;
+                if (radius >= 0) {
+                    return radius;
+                } else {
+                    System.out.println("Please input number more than 0");
+                }
             } catch (NumberFormatException e) {
                 System.out.println("Input incorrect value, try again");
             }
@@ -87,6 +91,24 @@ public class Handler {
             try {
                 int variable = Integer.parseInt(nextLine);
                 return variable;
+            } catch (NumberFormatException e) {
+                System.out.println("Input incorrect value, try again");
+            }
+        }
+    }
+
+    public static int hendleIntPifagorFunc() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            String nextLine = scanner.nextLine();
+
+            try {
+                int side = Integer.parseInt(nextLine);
+                if (side > 0) {
+                    return side;
+                } else {
+                    System.out.println("Please input number more than 0");
+                }
             } catch (NumberFormatException e) {
                 System.out.println("Input incorrect value, try again");
             }
@@ -149,8 +171,15 @@ public class Handler {
                 PrintMenu.printMenu();
 
             case 8:
+                System.out.println("Please input side 1");
+                int c = Handler.hendleIntPifagorFunc();
+                System.out.println("Please input side 2");
+                int d = Handler.hendleIntPifagorFunc();
+                System.out.println("Hypotenuse = " + decimalFormat.format(CircleArea.PifagorHypotenuza(c, d)));
+                PrintMenu.printMenu();
                 break;
-
+            case 9:
+                break;
         }
     }
 }
