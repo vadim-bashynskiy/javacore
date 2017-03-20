@@ -6,7 +6,7 @@ import com.bashynskiy.app.utils.convertors.PrimitiveConvertor;
  */
 public class Lesson3Runner {
     public static void main(String[] args) {
-        PrimitiveConvertor convertor = new PrimitiveConvertor();
+       PrimitiveConvertor convertor = new PrimitiveConvertor();
         System.out.println( convertor.floatToChar(71.6f));
         System.out.println(convertor.charToInt('i'));
         System.out.println(convertor.intToChar(116));

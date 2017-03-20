@@ -103,6 +103,7 @@ public class Handler {
                 System.out.println("Circle Area = " + decimalFormat.format(CircleArea.calculateCircleArea(hendleDoubleVariable())));
                 System.out.println();
                 PrintMenu.printMenu();
+                break;
 
             case 2:
                 System.out.println("Please input first number");
@@ -111,6 +112,7 @@ public class Handler {
                 double b = hendleDoubleVariable();
                 System.out.println("Max equals = " + CircleArea.calculateBigger(a, b));
                 PrintMenu.printMenu();
+                break;
 
             case 3:
                 System.out.println("Please input first number");
@@ -120,6 +122,7 @@ public class Handler {
                 System.out.println("Sum = " + MathFunc.sum(a, b));
                 System.out.println();
                 PrintMenu.printMenu();
+                break;
             case 4:
                 System.out.println("Please input first number");
                 a = hendleDoubleVariable();
@@ -128,16 +131,17 @@ public class Handler {
                 System.out.println("multiply = " + MathFunc.multiply(a, b));
                 System.out.println();
                 PrintMenu.printMenu();
-
+                break;
             case 5:
                 System.out.println("Please input value");
                 System.out.println("Char = " + PrimitiveConvertor.floatToChar(hendleFloatVariable()));
                 PrintMenu.printMenu();
-
+                break;
             case 6:
                 System.out.println("Please input value");
                 System.out.println("Int = " + PrimitiveConvertor.charToInt(hendleCharVariable()));
                 PrintMenu.printMenu();
+                break;
 
             case 7:
                 System.out.println("Please input value");
