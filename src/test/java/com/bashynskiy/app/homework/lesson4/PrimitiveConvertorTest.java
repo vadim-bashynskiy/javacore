@@ -2,7 +2,9 @@ package com.bashynskiy.app.homework.lesson4;
 
 import com.bashynskiy.app.utils.convertors.PrimitiveConvertor;
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 /**
  * Created by testu on 3/20/2017.
