@@ -60,8 +60,7 @@ public class Handler {
         while (true) {
             String nextLine = scanner.nextLine();
             try {
-                float variable = Float.parseFloat(nextLine);
-                return variable;
+                return Float.parseFloat(nextLine);
             } catch (NumberFormatException e) {
                 System.out.println("Input incorrect value, try again");
             }
