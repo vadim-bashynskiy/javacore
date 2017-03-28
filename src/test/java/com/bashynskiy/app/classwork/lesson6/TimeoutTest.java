@@ -1,9 +1,7 @@
-package com.bashynskiy.app.classwork.lesson5;
+package com.bashynskiy.app.classwork.lesson6;
 
 import org.junit.Ignore;
 import org.junit.Test;
-
-import java.security.KeyStore;
 
 /**
  * Created by testu on 3/21/2017.

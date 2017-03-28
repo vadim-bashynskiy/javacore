@@ -1,4 +1,4 @@
-package com.bashynskiy.app.classwork.lesson5;
+package com.bashynskiy.app.classwork.lesson6;
 
 /**
  * Created by testu on 3/24/2017.

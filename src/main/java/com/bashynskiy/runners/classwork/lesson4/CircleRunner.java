@@ -1,4 +1,4 @@
-package com.bashynskiy.runners.lesson4;
+package com.bashynskiy.runners.classwork.lesson4;
 
 import com.bashynskiy.app.classwork.lesson4.CircleArea;
 import com.bashynskiy.app.homework.lesson4.PrintMenu;

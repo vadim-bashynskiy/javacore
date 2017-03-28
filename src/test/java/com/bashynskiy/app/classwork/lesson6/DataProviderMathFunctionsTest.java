@@ -1,7 +1,6 @@
-package com.bashynskiy.app.classwork.lesson5;
+package com.bashynskiy.app.classwork.lesson6;
 
 import com.bashynskiy.app.classwork.lesson3.MathFunc;
-import com.bashynskiy.app.classwork.lesson4.CircleArea;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
 import junitparams.mappers.CsvWithHeaderMapper;

@@ -1,7 +1,5 @@
 package com.bashynskiy.app.classwork.lesson4;
 
-import com.bashynskiy.runners.lesson4.CarRunner;
-
 /**
  * Created by testu on 3/17/2017.
  */
