@@ -1,10 +1,8 @@
 package com.bashynskiy.app.homework.lesson6;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 /**
  * Created by admin on 24.03.2017.
@@ -116,11 +114,9 @@ public class ArrayNumbers {
         System.out.println("Exercises 5");
         Random generator = new Random();
         int[][] mathSecond = new int[8][5]; // объявили двухмерный массив
-        int i, j, k = 0;
-
-        for (i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i++) {
             System.out.println();
-            for (j = 0; j < 5; j++) {
+            for (int j = 0; j < 5; j++) {
                 int a = 0;
                 while (a < 10)
                     a = generator.nextInt(999);
@@ -132,7 +128,6 @@ public class ArrayNumbers {
                     System.out.print(mathSecond[i][j] + " ");
                 }
             }
-
         }
         System.out.println();
     }
@@ -166,7 +161,6 @@ public class ArrayNumbers {
                 } catch (NumberFormatException f) {
                     System.out.println("Input incorrect value, enter only numbers or 'exit'");
                 }
-
             }
         }
     }
