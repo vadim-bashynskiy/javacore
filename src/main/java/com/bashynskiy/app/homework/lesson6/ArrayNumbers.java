@@ -9,6 +9,7 @@ import java.util.Scanner;
  */
 public class ArrayNumbers {
     public void arrayEvenNumbers() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Exercises 1");
         int[] evenList = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         for (int i = 0; i < evenList.length; i++) {

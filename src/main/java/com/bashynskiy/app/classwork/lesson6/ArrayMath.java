@@ -8,7 +8,7 @@ public class ArrayMath {
         int[] a = {1, 2, 3};
         a[0] = 1;
         a[1] = 3;
-        a[2] = 2;
+        a[2] = 1;
         for (int eventlist : a) {
             System.out.println(eventlist);
         }
