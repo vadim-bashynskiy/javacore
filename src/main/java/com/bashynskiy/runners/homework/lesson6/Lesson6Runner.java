@@ -12,9 +12,9 @@ public class Lesson6Runner {
         arrayNumbers.arrayEvenNumbersCreate();
         arrayNumbers.massEven();
         arrayNumbers.massNotEven();
-        arrayNumbers.massRandom();
-        arrayNumbers.masMaxMinRandom();*/
+        arrayNumbers.massRandom();*/
+        arrayNumbers.masMaxMinRandom();
        // arrayNumbers.massDoubleLevel();
-        arrayNumbers.scannerInput();
+        //arrayNumbers.scannerInput();
     }
 }

@@ -1,4 +1,4 @@
-package com.bashynskiy.runners.homework;
+package com.bashynskiy.runners.homework.lesson4;
 
 import com.bashynskiy.app.homework.lesson4.PrintMenu;
 
