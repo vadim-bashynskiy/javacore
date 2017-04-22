@@ -13,9 +13,7 @@ public class StringPolindrome {
 
             isPalindrome = isPalindrome &&
 
-                    (palindrome.charAt(i) == palindrome.charAt
-
-                            (palindrome.length() - i - 1));
+                    (palindrome.charAt(i) == palindrome.charAt(palindrome.length() - i - 1));
         }
 
         if (isPalindrome)

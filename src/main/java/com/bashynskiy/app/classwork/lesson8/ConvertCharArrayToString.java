@@ -8,12 +8,12 @@ import java.util.IdentityHashMap;
  */
 public class ConvertCharArrayToString {
     public void convert(){
-        String stringToDosplay = "";
+        String stringToDisplay = "";
         char[] charArrayToString = {'a','b','c','d'};
         for (int i = 0; i < charArrayToString.length ; i++) {
-            stringToDosplay += charArrayToString[i];
+            stringToDisplay += charArrayToString[i];
         }
-        System.out.println(stringToDosplay);
+        System.out.println(stringToDisplay);
     }
     public void replace(){
         String stringToDisplay = "";
