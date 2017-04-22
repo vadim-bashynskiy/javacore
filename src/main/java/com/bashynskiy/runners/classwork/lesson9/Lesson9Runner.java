@@ -6,7 +6,7 @@ import com.bashynskiy.app.classwork.lesson9.StringPolindrome;
 /**
  * Created by admin on 10.04.2017.
  */
-public class RunnerLesson9 {
+public class Lesson9Runner {
 
     public static void main(String[] args) {
         StringPolindrome stringPolindrome = new StringPolindrome();
