@@ -1,7 +1,7 @@
-package com.bashynskiy.runners.classwork.lesson13;
+package com.bashynskiy.runners.classwork.lesson12;
 
-import com.bashynskiy.app.classwork.lesson13.Person;
-import com.bashynskiy.app.classwork.lesson13.Teacher;
+import com.bashynskiy.app.classwork.lesson12.Person;
+import com.bashynskiy.app.classwork.lesson12.Teacher;
 
 /**
  * Created by testu on 4/25/2017.

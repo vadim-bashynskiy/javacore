@@ -1,6 +1,6 @@
-package com.bashynskiy.runners.homework.lesson12;
+package com.bashynskiy.runners.homework.lesson13;
 
-import com.bashynskiy.app.homework.lesson12.Human;
+import com.bashynskiy.app.homework.lesson13.Human;
 
 /**
  * Created by admin on 23.04.2017.

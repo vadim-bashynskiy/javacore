@@ -1,6 +1,6 @@
-package com.bashynskiy.runners.classwork.lesson12;
+package com.bashynskiy.runners.classwork.lesson13;
 
-        import com.bashynskiy.app.classwork.lesson12.Bicycle;
+        import com.bashynskiy.app.classwork.lesson13.Bicycle;
 
 /**
  * Created by testu on 4/21/2017.
