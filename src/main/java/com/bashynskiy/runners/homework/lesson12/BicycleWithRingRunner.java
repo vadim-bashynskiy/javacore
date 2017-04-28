@@ -1,5 +1,6 @@
 package com.bashynskiy.runners.homework.lesson12;
 
+import com.bashynskiy.app.homework.lesson12.Bicycle;
 import com.bashynskiy.app.homework.lesson12.BicycleWithRing;
 import com.bashynskiy.app.homework.lesson12.BicycleWithRingInterface;
 import com.bashynskiy.app.homework.lesson12.CustomBicycle;
@@ -9,11 +10,12 @@ import com.bashynskiy.app.homework.lesson12.CustomBicycle;
  */
 public class BicycleWithRingRunner {
     public static void main(String[] args) {
-        BicycleWithRing bicycleWithRing = new BicycleWithRing();
-        bicycleWithRing.ring();
 
+        BicycleWithRingInterface bicycle = new BicycleWithRing();
+        bicycle.ring();
+        Bicycle bicycle1 = new CustomBicycle();
+        bicycle1.setGear(3);
+        bicycle1.setSpeed(280);
 
-        CustomBicycle customBicycle = new CustomBicycle();
-        customBicycle.ride();
     }
 }

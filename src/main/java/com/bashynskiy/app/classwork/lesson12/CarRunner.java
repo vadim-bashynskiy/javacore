@@ -9,6 +9,8 @@ public class CarRunner {
         bmw.drive();
         Audi audi = new Audi();
         audi.drive();
+        Car car = new Car();
+        car.drive();
 
     }
 }
