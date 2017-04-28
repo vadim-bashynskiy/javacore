@@ -14,6 +14,7 @@ public class BicycleWithRingRunner {
         BicycleWithRingInterface bicycle = new BicycleWithRing();
         bicycle.ring();
         Bicycle bicycle1 = new CustomBicycle();
+        bicycle1.ride();
         bicycle1.setGear(3);
         bicycle1.setSpeed(280);
 

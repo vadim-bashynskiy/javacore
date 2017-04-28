@@ -10,13 +10,13 @@ public class CustomBicycle extends Bicycle {
     int speed;
     int gear;
     @Override
-    void setSpeed(int speed) {
+   public void setSpeed(int speed) {
         this.speed =speed;
         System.out.println(speed);
     }
 
     @Override
-    void setGear(int gear) {
+   public void setGear(int gear) {
         this.gear = gear;
         System.out.println(gear);
     }
