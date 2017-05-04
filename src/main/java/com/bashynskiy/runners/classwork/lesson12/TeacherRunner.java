@@ -14,13 +14,12 @@ public class TeacherRunner {
         String lector = "Serega";
         int degree = 12;
         int expiriance = 3;
-        int age =27;
-        Person person = new Person(name,university,age);
-        Teacher teacher = new Teacher(name,university,age,lector,faculte,degree,expiriance);
-       teacher.teacherInfoVeriable();
-
-       teacher.stayUniversity();
-       person.stayUniversity();
+        int age = 27;
+        Person person = new Person(name, university, age);
+        Teacher teacher = new Teacher(name, university, age, lector, faculte, degree, expiriance);
+        teacher.teacherInfoVeriable();
+        teacher.stayUniversity();
+        person.stayUniversity();
 
     }
 

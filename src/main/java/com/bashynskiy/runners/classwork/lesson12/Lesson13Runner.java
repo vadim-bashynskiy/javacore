@@ -9,9 +9,9 @@ public class Lesson13Runner {
     public static void main(String[] args) {
         String name = "Vadim";
         String university="bla";
-        int age = 27;
+        int age = 30;
         Student student = new Student(name,university,age);
-        student.age = 27;
+        student.setAge(27);
         student.printStudentInfo();
     }
 }
