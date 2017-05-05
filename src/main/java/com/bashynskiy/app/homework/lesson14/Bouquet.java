@@ -30,8 +30,4 @@ public class Bouquet {
         return flowers;
     }
 
-    public static void main(String[] args) {
-        Bouquet bouquet = new Bouquet();
-        System.out.println("Your bouquet price = " + bouquet.count(bouquet.flowersMass()));
-    }
 }
