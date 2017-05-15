@@ -1,6 +1,6 @@
-package com.bashynskiy.runners.classwork.encapsulation;
+package com.bashynskiy.runners.classwork.lesson11_encapsulation;
 
-import com.bashynskiy.app.classwork.encapsulation.Car;
+import com.bashynskiy.app.classwork.lesson11_encapsulation.Car;
 
 /**
  * Created by testu on 4/28/2017.

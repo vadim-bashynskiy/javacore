@@ -1,6 +1,6 @@
-package com.bashynskiy.runners.classwork.polimorfism;
+package com.bashynskiy.runners.classwork.lesson14_polimorfism;
 
-import com.bashynskiy.app.classwork.polimorfism.*;
+import com.bashynskiy.app.classwork.lesson14_polimorfism.*;
 
 /**
  * Created by testu on 4/28/2017.

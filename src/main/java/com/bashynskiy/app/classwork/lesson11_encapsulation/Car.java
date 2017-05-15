@@ -1,4 +1,4 @@
-package com.bashynskiy.app.classwork.encapsulation;
+package com.bashynskiy.app.classwork.lesson11_encapsulation;
 
 /**
  * Created by testu on 4/28/2017.
