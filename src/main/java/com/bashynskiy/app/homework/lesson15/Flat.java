@@ -8,6 +8,10 @@ public class Flat {
     private String tvName;
     private String dishes;
 
+    public Flat(String dishes) {
+        this.dishes = dishes;
+    }
+
     public String getTvName() {
         return tvName;
     }
