@@ -4,7 +4,7 @@ package com.bashynskiy.app.homework.lesson16;
  * Created by admin on 19.05.2017.
  */
 public class CrawlerTractor extends Tractor {
-    String name;
+    private String name;
     private int speed;
     private int mass;
     private int peopleNumber;
