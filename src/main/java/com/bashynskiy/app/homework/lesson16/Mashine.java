@@ -9,8 +9,8 @@ public abstract class Mashine implements Run {
     int MIN_SPEED = 60;
     int MIN_COUNT_PEOPLE = 10;
     int MAX_COUNT_PEOPLE = 30;
-    private String name;
-    private int speed;
+    protected String name;
+    protected int speed;
 
     public Mashine(String name, int speed) {
         this.name = name;
