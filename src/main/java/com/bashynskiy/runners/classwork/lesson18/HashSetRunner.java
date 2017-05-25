@@ -17,6 +17,7 @@ public class HashSetRunner {
         hashSet.add("a");
         hashSet.add(23);
         hashSet.add(23);
+        hashSet.add("c");
         System.out.println(hashSet);
     }
 }

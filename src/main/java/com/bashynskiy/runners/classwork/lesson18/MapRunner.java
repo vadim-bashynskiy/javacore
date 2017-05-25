@@ -15,7 +15,6 @@ public class MapRunner {
         m1.put("Ayan", "12");
         m1.put("Daisy", 14);
         m1.put(niko,144);
-
         System.out.println(m1.get("Zara"));
         System.out.println(m1.get("Mahnaz"));
         System.out.println(m1.get("Ayan"));

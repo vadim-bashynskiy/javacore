@@ -1,28 +1,29 @@
 package com.bashynskiy.app.homework.lesson18;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
  * Created by VBashynskyi on 25.05.2017.
  */
-public class ArraySorterGenerics <T> {
+public class ArraySorterGenerics <T extends Number> {
+    private T[] mass;
 
- /*   private List<T> arrayList = new ArrayList<>();
-
-    public ArraySorterGenerics(List<T>  arrayList) {
-        this.arrayList = arrayList;
+    public ArraySorterGenerics(T[] mass) {
+        this.mass = mass;
     }
+
     public void sort(){
-        return arrayList.sort();
-
+        Arrays.sort(mass);
     }
 
-    public List<T> getArrayList() {
-        return arrayList;
+    public T[] getMass() {
+        return mass;
+    }
+    public static <K> K[] massSort(K[] massive){
+        Arrays.sort(massive);
+        return massive;
     }
 
-    public static void main(String[] args) {
-        ArraySorterGenerics arraySorterGenerics = new ArraySorterGenerics();
-    }*/
 }
