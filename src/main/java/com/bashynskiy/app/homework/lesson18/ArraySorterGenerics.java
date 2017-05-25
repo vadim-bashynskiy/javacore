@@ -7,21 +7,22 @@ import java.util.List;
 /**
  * Created by VBashynskyi on 25.05.2017.
  */
-public class ArraySorterGenerics <T extends Number> {
+public class ArraySorterGenerics<T extends Number> {
     private T[] mass;
 
     public ArraySorterGenerics(T[] mass) {
         this.mass = mass;
     }
 
-    public void sort(){
+    public void sort() {
         Arrays.sort(mass);
     }
 
     public T[] getMass() {
         return mass;
     }
-    public static <K> K[] massSort(K[] massive){
+
+    public static <K> K[] massSort(K[] massive) {
         Arrays.sort(massive);
         return massive;
     }

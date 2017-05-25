@@ -8,6 +8,9 @@ import com.bashynskiy.app.homework.lesson18.ArrayDublicateAndSort;
 public class ArrayDublicateAndSortRunner {
     public static void main(String[] args) {
         ArrayDublicateAndSort arrayDublicateAndSort = new ArrayDublicateAndSort();
+        //remove dublicate and sort with ArrayList and my func
         arrayDublicateAndSort.print();
-         }
+        //remove dublicate and sort with help HashSet
+        System.out.println(arrayDublicateAndSort.removeDubAndSort());
+    }
 }
