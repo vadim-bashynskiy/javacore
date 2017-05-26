@@ -2,6 +2,7 @@ package com.bashynskiy.runners.classwork.lesson18;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by testu on 5/23/2017.
@@ -22,5 +23,15 @@ public class MapRunner {
         System.out.println(m1.get(niko));
         System.out.println("Map Elements");
         System.out.println("\t" + m1);
+
+        Map map = new HashMap<>();
+        map.put("KIT", 13);
+        map.put("Ciklum", 15);
+        Set entryset = map.entrySet();
+        System.out.println(entryset);
+        Set keys = map.keySet();
+        System.out.println(keys);
+        System.out.println(map.containsValue(13));
+        System.out.println(map.containsKey("KIT"));
     }
 }

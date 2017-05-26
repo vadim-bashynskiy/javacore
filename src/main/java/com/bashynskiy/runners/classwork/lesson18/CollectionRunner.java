@@ -1,7 +1,7 @@
 package com.bashynskiy.runners.classwork.lesson18;
 
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by testu on 5/23/2017.
@@ -36,8 +36,6 @@ public class CollectionRunner {
         ArrayList<Integer> integerArrayList = new ArrayList<>();
         integerArrayList.add(new Integer(number));// or like
         integerArrayList.add(number);
-
-
 
     }
 }

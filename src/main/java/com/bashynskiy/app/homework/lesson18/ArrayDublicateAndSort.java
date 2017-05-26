@@ -42,12 +42,11 @@ public class ArrayDublicateAndSort {
         return list;
     }
 
-    public HashSet removeDubAndSort() {
+    public TreeSet removeDubAndSort() {
         inputList();
-        HashSet hashSet = new HashSet();
-        list.sort(String::compareTo);
-        hashSet.addAll(list);
-        return hashSet;
+        TreeSet treeSet = new TreeSet();
+        treeSet.addAll(list);
+        return treeSet;
     }
 
     public void print() {

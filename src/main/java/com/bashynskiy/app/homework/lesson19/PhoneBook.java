@@ -15,10 +15,16 @@ public class PhoneBook {
 
     public void addContact(String category, Contact contact) {
         ArrayList<Contact> contacts = hashMap.get(category);
-        if (contact == null) {
+        if (contacts == null) {
             contacts = new ArrayList<>();
             hashMap.put(category, contacts);
         }
         contacts.add(contact);
+    }
+
+    public static void main(String[] args) {
+        PhoneBook phoneBook = new PhoneBook();
+        Contact contact = new Contact("Vadim","+380938311526");
+             phoneBook.addContact("Home", contact);
     }
 }

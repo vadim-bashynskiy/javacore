@@ -10,7 +10,7 @@ public class ArrayDublicateAndSortRunner {
         ArrayDublicateAndSort arrayDublicateAndSort = new ArrayDublicateAndSort();
         //remove dublicate and sort with ArrayList and my func
         arrayDublicateAndSort.print();
-        //remove dublicate and sort with help HashSet
+        //remove dublicate and sort with help TreeSet
         System.out.println(arrayDublicateAndSort.removeDubAndSort());
     }
 }

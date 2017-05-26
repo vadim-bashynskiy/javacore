@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class Category {
     ArrayList<String> categoryList = new ArrayList<>();
+
     public void addCategoryList(String nameCategory){
         categoryList.add(nameCategory);
     }
