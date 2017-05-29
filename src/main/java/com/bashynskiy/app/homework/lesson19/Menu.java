@@ -1,7 +1,5 @@
 package com.bashynskiy.app.homework.lesson19;
 
-import com.sun.xml.internal.fastinfoset.util.StringArray;
-
 import java.util.Scanner;
 
 /**
@@ -10,8 +8,8 @@ import java.util.Scanner;
 public class Menu {
     Contact contact = new Contact();
     PhoneBook phoneBook = new PhoneBook();
-    Category category = new Category();
-    public void printMenu(){
+
+    public void printMenu() {
         System.out.println("List all categories - enter 1");
         System.out.println("List all contacts by category - enter 2");
         System.out.println("Add contact - enter 3");
@@ -20,42 +18,69 @@ public class Menu {
         System.out.println("Exit - enter 6");
         swichCase();
     }
-    public String  enterString(){
+
+    public String enterString() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
-    public void swichCase(){
-        Menu menu = new Menu();
+
+    public void swichCase() {
         Scanner scanner = new Scanner(System.in);
         int option = scanner.nextInt();
         switch (option) {
             case 1:
-                category.printCategoryList();
-                menu.printMenu();
+                //  category.printCategoryList();
+                phoneBook.listAllCategoty();
+                System.out.println("___________________________________________________________");
+                printMenu();
                 break;
             case 2:
                 System.out.println("Enter Category");
-                String catName1 = menu.enterString();
+                String catName1 = enterString();
                 System.out.println(phoneBook.getContactsByCategory(catName1));
-                menu.printMenu();
+                System.out.println("___________________________________________________________");
+                printMenu();
                 break;
             case 3:
                 System.out.println("Enter Category");
-                String catName = menu.enterString();
+                String catName = enterString();
                 System.out.println("Enter Name");
-                contact.setName(menu.enterString());
+                contact.setName(enterString());
                 System.out.println("Enter Phone");
-                contact.setPhone(menu.enterString());
-                phoneBook.addContact(catName,contact);
-                menu.printMenu();
+                contact.setPhone(enterString());
+                phoneBook.addContact(catName, contact);
+                System.out.println("___________________________________________________________");
+                printMenu();
                 break;
             case 4:
                 System.out.println("Enter Category");
-                String newCategory = menu.enterString();
-                category.addCategoryList(newCategory);
-                menu.printMenu();
+                String newCategory = enterString();
+                System.out.println("___________________________________________________________");
+                printMenu();
                 break;
             case 5:
+                System.out.println("Enter name");
+                String findName = enterString();
+                Contact contact = phoneBook.findContact(findName);
+                if (contact == null) {
+                    System.out.println("Not found");
+                } else {
+                    System.out.println("Enter new name (enter to skip)");
+                    String newName = enterString();
+                    if (!newName.isEmpty()) {
+                        contact.setName(newName);
+                    }
+                    System.out.println("Enter new phone (enter to skip)");
+                    String newPhone = enterString();
+                    if (!newPhone.isEmpty()) {
+                        contact.setPhone(newPhone);
+                    }
+                   // if (phoneBook.addCategory()){
+
+
+                }
+                printMenu();
+                break;
             case 6:
                 break;
         }

@@ -5,23 +5,51 @@ import java.util.*;
  * Created by VBashynskyi on 26.05.2017.
  */
 public class PhoneBook {
+    private String contactName;
+    private String contactPhone;
    public  HashMap<String, ArrayList<Contact>> hashMap = new HashMap<>();
     public ArrayList<Contact> getContactsByCategory(String category){
         return hashMap.get(category);
     }
 
     public void addContact(String category, Contact contact) {
-        Category category1 = new Category();
         ArrayList<Contact> contacts = hashMap.get(category);
         if (contacts == null) {
             contacts = new ArrayList<>();
             hashMap.put(category, contacts);
-            category1.addCategoryList(category);
         }
         contacts.add(contact);
     }
     public void listAllCategoty(){
-       // System.out.println(hashMap.);
+       System.out.println(hashMap.keySet());
+    }
+    public Contact findContact(String name){
+        for (Map.Entry<String, ArrayList<Contact>> entry: hashMap.entrySet()) {
+            for (Contact contact:entry.getValue()) {
+             if (name.equals(contact.getName())){
+                 return contact;
+
+             }
+            }
+        }
+        return null;
+            }
+    public boolean addCategory(String category){
+        ArrayList<Contact> contacts = hashMap.get(category);
+        if (contacts == null) {
+            contacts = new ArrayList<>();
+            hashMap.put(category, contacts);
+            return true;
+        }
+        return false;
+    }
+
+    public void setContactName(String contactName) {
+        this.contactName = contactName;
+    }
+
+    public void setContactPhone(String contactPhone) {
+        this.contactPhone = contactPhone;
     }
 
     public static void main(String[] args) {
