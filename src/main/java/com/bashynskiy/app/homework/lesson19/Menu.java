@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Created by admin on 28.05.2017.
  */
 public class Menu {
-    Contact contact = new Contact();
     PhoneBook phoneBook = new PhoneBook();
 
     public void printMenu() {
@@ -14,7 +13,7 @@ public class Menu {
         System.out.println("List all contacts by category - enter 2");
         System.out.println("Add contact - enter 3");
         System.out.println("Add  category - enter 4");
-        System.out.println("change contact - enter 5");
+        System.out.println("Change contact - enter 5");
         System.out.println("Exit - enter 6");
         swichCase();
     }
@@ -29,7 +28,6 @@ public class Menu {
         int option = scanner.nextInt();
         switch (option) {
             case 1:
-                //  category.printCategoryList();
                 phoneBook.listAllCategoty();
                 System.out.println("___________________________________________________________");
                 printMenu();
@@ -42,19 +40,31 @@ public class Menu {
                 printMenu();
                 break;
             case 3:
-                System.out.println("Enter Category");
-                String catName = enterString();
                 System.out.println("Enter Name");
-                contact.setName(enterString());
-                System.out.println("Enter Phone");
-                contact.setPhone(enterString());
-                phoneBook.addContact(catName, contact);
+                String ConName = enterString();
+                Contact contact1 = phoneBook.findContact(ConName);
+                if (contact1 != null) {
+                    System.out.println("Name already use");
+                } else {
+                    Contact contact = new Contact();
+                    System.out.println("Enter Category");
+                    String catName = enterString();
+                    contact.setName(ConName);
+                    System.out.println("Enter Phone");
+                    contact.setPhone(enterString());
+                    phoneBook.addContact(catName, contact);
+                }
                 System.out.println("___________________________________________________________");
                 printMenu();
                 break;
             case 4:
                 System.out.println("Enter Category");
                 String newCategory = enterString();
+                if (phoneBook.addCategory(newCategory)) {
+                    System.out.println("Category was added");
+                } else {
+                    System.out.println("You already have this category");
+                }
                 System.out.println("___________________________________________________________");
                 printMenu();
                 break;
@@ -75,10 +85,8 @@ public class Menu {
                     if (!newPhone.isEmpty()) {
                         contact.setPhone(newPhone);
                     }
-                   // if (phoneBook.addCategory()){
-
-
                 }
+                System.out.println("___________________________________________________________");
                 printMenu();
                 break;
             case 6:
